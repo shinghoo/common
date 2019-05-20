@@ -5,7 +5,7 @@ import (
 	"crypto/md5"
 	"crypto/sha256"
 	"fmt"
-	uuid "github.com/satori/go.uuid"
+	uuid "github.com/shinghoo/go.uuid"
 	"io"
 	"io/ioutil"
 	"mime/multipart"
