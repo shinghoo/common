@@ -65,7 +65,7 @@ func SaveImage(imgFile multipart.File, savePath string) (savedPath string) {
 }
 
 func GetRandomHashString() (str string) {
-	u1 := uuid.NewV4()
+	u1, _ := uuid.NewV4()
 	str = u1.String()
 	str += strconv.FormatInt(time.Now().UnixNano(), 10)
 	str = fmt.Sprintf("%x", sha256.Sum256([]byte(str)))
